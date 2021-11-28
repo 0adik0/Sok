@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/glavni_item">
+
+    <fragment
+        android:id="@+id/glavni_item"
+        android:name="com.apps.sok.fragment.MainFragment"
+        android:label="fragment_glavni"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/my_profil"
+        android:name="com.apps.sok.fragment.MyOrders"
+        android:label="fragment_profil_"
+        tools:layout="@layout/fragment_my_orders" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.apps.sok.fragment.Notifications"
+        android:label="fragment_priobresti_uslugi_"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/priceListTarif"
+        android:name="com.apps.sok.activity.PriceListTarif"
+        android:label="fragment_price_list_tarif"
+        tools:layout="@layout/fragment_price_list_tarif" />
+</navigation>

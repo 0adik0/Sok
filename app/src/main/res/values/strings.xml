@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Сок</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="procat"><b>Прокат:</b> Горные лыжи</string>
+    <string name="procat1"><b>Прокат:</b> Беговые лыжи</string>
+    <string name="trenazher"><b>Тренажер:</b> Спортивный</string>
+    <string name="dni1">Понедельник\nВтроник-четверг\nПятница\nСуббота\nВоскресенье</string>
+    <string name="dni2">16:00–21:00\n12:00–21:00\n12:00–22:00\n10:00–24:00\n10:00–24:00</string>
+    <string name="nomera">Администрация комплекса: +7 846 978-56-07\nБронирование номеров: +7 917-816-12-12\nСпасатели: +7 927 003-03-30\nИнструкторский центр: +7 927 686-82-79\nWhatsApp: +7 987 905-89-31</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/scriti_menyu_otkritiye"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:onClick="onClickdriwer_open"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_skriti_menyu_otkritiye"/>
+</androidx.appcompat.widget.Toolbar>

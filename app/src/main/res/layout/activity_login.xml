@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/ic_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Ваш E-Mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#939393"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEmail">
+
+        <EditText
+            android:id="@+id/edPassReg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingEnd="85dp"
+            android:hint="Ваш пароль"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColorHint="#939393"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/forgotPass"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Не помню"
+            app:layout_constraintBottom_toBottomOf="@+id/edPassReg"
+            app:layout_constraintEnd_toEndOf="@+id/edPassReg"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/edPassReg"
+            app:layout_constraintTop_toTopOf="@+id/edPassReg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/style_btn1"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:drawablePadding="-15dp"
+        android:drawableTint="@color/white"
+        android:elevation="50dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:paddingEnd="10dp"
+        android:text="ВОЙТИ"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintEnd_toEndOf="@+id/edEmail"
+        app:layout_constraintStart_toStartOf="@+id/edEmail"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginEnd="10dp"
+        android:background="#26011128"
+        app:layout_constraintBottom_toBottomOf="@+id/noAcount"
+        app:layout_constraintEnd_toStartOf="@+id/noAcount"
+        app:layout_constraintTop_toTopOf="@+id/noAcount" />
+
+    <TextView
+        android:id="@+id/noAcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Нет аккаунта?"
+        android:textColor="#939393"
+        app:layout_constraintBottom_toTopOf="@+id/btnReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:background="#26011128"
+        app:layout_constraintBottom_toBottomOf="@+id/noAcount"
+        app:layout_constraintStart_toEndOf="@+id/noAcount"
+        app:layout_constraintTop_toTopOf="@+id/noAcount" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/style_btn2"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

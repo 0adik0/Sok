@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+
+        android:id="@+id/group">
+    <item
+        android:id="@+id/moy_zakaz_item"
+        android:title="Мои заказы" />
+    <item
+        android:id="@+id/istoriya_item"
+        android:title="История" />
+    <item
+        android:id="@+id/my_profil"
+        android:title="Профиль" />
+    <item
+        android:id="@+id/my_card_item"
+        android:title="Мои карты" />
+    <item
+        android:id="@+id/online_kam_item"
+        android:title="Онлайн камеры" />
+    <item
+        android:id="@+id/akcii_item"
+        android:title="АКЦИИ" />
+    <item
+        android:id="@+id/kantakti_item"
+        android:title="Контакты" />
+    <item
+        android:id="@+id/informer_pagoda_item"
+        android:title="Информер погоды" />
+    <item
+        android:id="@+id/viyti_item"
+        android:title="Выйти" />
+
+    </group>
+</menu>

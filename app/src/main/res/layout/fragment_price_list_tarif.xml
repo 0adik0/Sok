@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".activity.PriceListTarif">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#0365B2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/backPr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:gravity="left"
+                android:text="Тарифы"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/style_btn1"
+                android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+                android:drawableTint="@color/white"
+                android:elevation="50dp"
+                android:gravity="left|center"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:text="Подъёмник"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_btn1"
+                android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+                android:drawableTint="@color/white"
+                android:elevation="50dp"
+                android:gravity="left|center"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:text="@string/procat"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_btn1"
+                android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+                android:drawableTint="@color/white"
+                android:elevation="50dp"
+                android:gravity="left|center"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:text="@string/procat1"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_btn1"
+                android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+                android:drawableTint="@color/white"
+                android:elevation="50dp"
+                android:gravity="left|center"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:text="@string/trenazher"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_btn1"
+                android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+                android:drawableTint="@color/white"
+                android:elevation="50dp"
+                android:gravity="left|center"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:text="Инструктор"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_btn1"
+                android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+                android:drawableTint="@color/white"
+                android:elevation="50dp"
+                android:gravity="left|center"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:text="Тюбинг"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/kupit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_btn3"
+                android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+                android:drawableTint="@color/white"
+                android:elevation="50dp"
+                android:gravity="left|center"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:text="КУПИТЬ УСЛУГУ"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
